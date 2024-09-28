@@ -1,0 +1,284 @@
+:root {
+    --main-radius: 0.5vw;
+    --main-padding: 2vw;
+    --blue: #003366;
+    --dark-blue: #002244;
+    --light-blue: #66B2FF;
+    --white: #ffffff;
+    --gray: #f4f4f9;
+    --orange: #FFA500;
+}
+
+body {
+    text-align: left;
+    font-family: Arial, sans-serif;
+    background-color: var(--gray);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 90vw;
+    margin: 0 auto;
+    padding: 2vw;
+}
+
+nav {
+    background-color: var(--blue);
+    padding: var(--main-padding);
+    border-radius: var(--main-radius);
+    text-align: center;
+}
+
+nav span a {
+    color: var(--white);
+    text-decoration: none;
+    margin: 0 2vw;
+    font-size: 1.5vw;
+}
+
+nav span a:hover {
+    color: var(--light-blue);
+}
+
+.about-skills {
+    text-align: center; /* Center content in the container */
+}
+
+.about, .skills {
+    background-color: var(--dark-blue);
+    padding: var(--main-padding);
+    border-radius: var(--main-radius);
+    color: var(--white);
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left; /* Ensure text is left-aligned within the box */
+    height: 380px;
+}
+
+.skills {
+    margin-left: 0.5%;
+}
+
+.about-content {
+    overflow: hidden; /* Clear the floats */
+}
+
+.about-content img {
+    float: left; /* Float the image to the left */
+    width: 100%; /* Adjust width as needed */
+    height: 120%;
+    max-width: 20vw; /* Maintain max width */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 2vw; /* Space between image and text */
+}
+
+.about-content p {
+    overflow: hidden; /* Ensure the paragraph clears the floated image */
+}
+
+.experience {
+    background-color: var(--dark-blue);
+    padding: var(--main-padding);
+    border-radius: var(--main-radius);
+    color: var(--white);
+    margin-top: 2vh;
+}
+
+/* Experience Section Styling */
+.experience-items {
+    text-align: center; /* Center the items within the section */
+}
+
+.experience-item {
+    display: inline-block; /* Allow items to sit next to each other */
+    width: 25%; /* Adjust width as needed */
+    margin: 1%; /* Margin for spacing between items */
+    vertical-align: top; /* Align items at the top */
+    background-color: var(--blue); /* Optional: add a background color */
+    padding: var(--main-padding); /* Add padding for aesthetics */
+    border-radius: var(--main-radius); /* Rounded corners */
+    color: var(--white); /* Text color */
+}
+
+.experience-item img {
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: var(--main-radius); /* Rounded corners for images */
+}
+
+
+.projects {
+    background-color: var(--dark-blue);
+    padding: var(--main-padding);
+    border-radius: var(--main-radius);
+    color: var(--white);
+    margin-top: 2vh;
+}
+
+.project-items {
+    text-align: center; /* Center align the items inside the section */
+}
+
+.project-item {
+    background-color: var(--blue);
+    padding: var(--main-padding);
+    border-radius: var(--main-radius);
+    margin: 1vh; /* Space around project items */
+    display: inline-block; /* Display items as inline blocks */
+    width: calc(20% - 2vh); /* Set width to allow 4 items in a row */
+    vertical-align: top; /* Align items at the top */
+}
+
+.project-item img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.education-certificates {
+    background-color: var(--dark-blue);
+    padding: var(--main-padding);
+    border-radius: var(--main-radius);
+    color: var(--white);
+    margin-top: 2vh;
+}
+
+.education, .certificates {
+    display: inline-block; /* Display sections side by side */
+    width: calc(48% - 2vh); /* Width for each section */
+    vertical-align: top; /* Align sections at the top */
+    box-sizing: border-box; /* Include padding in width/height calculation */
+    background-color: var(--blue); /* Background color for each section */
+    padding: var(--main-padding); /* Padding inside each section */
+    margin: 1vh; /* Margin around each section */
+}
+
+.education-content, .certificates-content {
+    margin-top: 1vh; /* Margin on top of content */
+}
+
+.education-item, .certificate-item {
+    display: inline-block; /* Display items side by side */
+    width: 100%; /* Make each item take the full width */
+    margin: 1vh 0; /* Space between items */
+}
+
+
+.education-item img, .certificate-item img {
+    float: left; /* Float the image to the left */
+    width: 100px; /* Adjust width as needed */
+    height: 100px;
+    max-width: 20vw; /* Maintain max width */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 2vw; /* Space between image and text */
+}
+
+.education-item img, .certificate-itemt p {
+    overflow: hidden; /* Ensure the paragraph clears the floated image */
+}
+
+.blogs-contact {
+    background-color: var(--dark-blue); /* Set background color */
+    padding: var(--main-padding);
+    margin: 2vh 0; /* Add vertical spacing */
+}
+
+.blogs, .contact {
+    background-color: var(-blue); /* Set background color for each block */
+    color: var(--white); /* Set text color */
+    width: 48%; /* Set width for both blocks */
+    display: inline-block; /* Display them inline */
+    vertical-align: top; /* Align them at the top */
+    margin-right: 2%; /* Add margin to the right of the blogs section */
+    padding: var(--main-padding);
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+/* Remove the margin from the last element */
+.contact {
+    margin-right: 0; /* Remove margin for the last block */
+}
+
+/* Make sure the heading and text are aligned correctly */
+.blogs h2, .contact h2 {
+    margin-top: 0; /* Remove top margin */
+}
+
+/* Style the form elements */
+.contact form {
+    display: block; /* Ensure form elements stack vertically */
+}
+
+.contact label {
+    display: block; /* Labels take full width */
+    margin-bottom: 0.5vh; /* Spacing below labels */
+}
+
+.contact input {
+    width: 100%; /* Full width for inputs */
+    padding: 0.5vh; /* Padding inside inputs */
+    margin-bottom: 1vh; /* Spacing below inputs */
+    border: 1px solid var(--light-blue); /* Border color */
+    border-radius: var(--main-radius); /* Rounded corners */
+}
+
+.contact button {
+    background-color: var(--orange); /* Button background */
+    color: var(--white); /* Button text color */
+    border: none; /* Remove default border */
+    padding: 0.5vh 1vh; /* Padding inside button */
+    border-radius: var(--main-radius); /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+}
+
+.contact button:hover {
+    background-color: var(--light-blue); /* Change color on hover */
+}
+
+footer {
+    background-color: var(--orange); /* Set the footer background to dark blue */
+    padding: var(--main-padding);
+    color: var(--white); /* Set text color to white */
+}
+
+.footer-content {
+    text-align: left; /* Center content */
+}
+
+.footer-images {
+    display: inline-block; /* Align items inline */
+}
+
+.footer-item {
+    display: inline-block; /* Allow items to sit next to each other */
+    margin: 0 12vw; /* Space between items */
+    text-align: center; /* Center the text below images */
+}
+
+.footer-images img {
+    width: 50px; /* Set a specific width for images */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 0.5vh; /* Space between image and text */
+}
+
+.footer-item span {
+    display: block; /* Make span a block element for spacing */
+    color: var(--white); /* Ensure text color is white */
+}
+
+
+@media only screen and (max-width: 768px) {
+    .about, .skills, .education, .certificates, .blogs, .contact {
+        width: 100%;
+        margin-left: 0;
+        float: none;
+    }
+
+    .experience div, .projects div {
+        width: 100%;
+        margin-right: 0;
+    }
+}
